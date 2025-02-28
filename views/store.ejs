@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Task 5: Add the title of your store here. Use EJS syntax. -->
+    <title> <%=title%> </title>
+</head>
+<body>
+    <!-- Task 6: Again, add the title of your store here. -->
+    <h1> <%=title%> </h1>
+
+    <!-- Task 7: Add a conditonal here. If there are some items on sale show this:  -->
+    
+        <h2>Some Products on Sale</h2>
+    
+      <!-- Otherwise show this: -->
+        <p>No Products on Sale Right Now.</p>
+    
+      <ul>
+          <% products.forEach(product => { %>
+            <li><%=product.name %></li>
+          <% }) %>
+      </ul>
+
+</body>
+</html>
